@@ -5,7 +5,7 @@ import B2 from "@/assets/IMG-20251004-WA0019.jpg";
 import B3 from "@/assets/XR6_5978.JPG";
 import P1 from "@/assets/1.JPG";
 import P2 from "@/assets/2.JPG";
-import P3 from "@/assets/3.jpg";
+import P3 from "@/assets/3.JPG";
 import P4 from "@/assets/4.JPG";
 import P5 from "@/assets/5.jpg";
 import P6 from "@/assets/6.jpg";
