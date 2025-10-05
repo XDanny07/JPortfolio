@@ -287,7 +287,7 @@ function AppLayout({ children, currentPageName }) {
             </div>
             <div className="p-8 flex justify-center space-x-6">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/joshnaasethi?igsh=Z2FlazlrZ2RyczFz"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: theme.text }}
@@ -300,7 +300,7 @@ function AppLayout({ children, currentPageName }) {
                 <Instagram className="w-6 h-6" />
               </a>
               <a
-                href="mailto:aria@ariachen.com"
+                href="mailto:joshnasethi6@gmail.com"
                 style={{ color: theme.text }}
                 onMouseOver={(e) =>
                   (e.currentTarget.style.color = theme.accent)
@@ -311,7 +311,7 @@ function AppLayout({ children, currentPageName }) {
                 <Mail className="w-6 h-6" />
               </a>
               <a
-                href="tel:+1234567890"
+                href="tel:+918112132455"
                 style={{ color: theme.text }}
                 onMouseOver={(e) =>
                   (e.currentTarget.style.color = theme.accent)

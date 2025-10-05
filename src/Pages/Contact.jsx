@@ -142,6 +142,7 @@ export default function Contact() {
                         {info.link ? (
                           <a
                             href={info.link}
+                            target="_blank"
                             className="font-sans hover:underline transition-colors duration-300"
                             style={{ color: theme.textLight }}
                           >
