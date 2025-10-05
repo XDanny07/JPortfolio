@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Video from "@/entities/Video";
-import VideoPlayer from "../components/video/VideoPlayer";
+import VideoPlayer from "@/components/video/VideoPlayer";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/components/theme/ThemeProvider";
 
