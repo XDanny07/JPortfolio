@@ -11,7 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/Components/ui/select";
-import Contact from "@/entities/Contact";
+import Contact from "@/Entities/Contact";
 import { Send, CheckCircle } from "lucide-react";
 import { useTheme } from "@/Components/theme/ThemeProvider";
 
