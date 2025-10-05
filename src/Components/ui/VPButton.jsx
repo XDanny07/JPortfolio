@@ -54,7 +54,6 @@ const StyledWrapper = styled.div`
     color: #fff;
     font-size: 1.125em;
     font-weight: 700;
-    letter-spacing: 0.3em;
     z-index: 20;
     transition: all 0.3s ease-in-out;
   }

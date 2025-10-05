@@ -6,7 +6,15 @@ import { imgOb } from "../Entities/Images";
 
 export default function About() {
   const { theme } = useTheme();
-
+  const measurements = [
+    "Height: 5'0\"",
+    'Bust: 31"',
+    'Waist: 25"',
+    "Dress: 0–2 US",
+    "Eyes: Black",
+    "Hair: Black",
+    "Shoe: 6 US",
+  ];
   return (
     <div className="min-h-screen" style={{ backgroundColor: theme.background }}>
       {/* Hero Section */}
@@ -81,7 +89,8 @@ export default function About() {
       </section>
 
       {/* Skills & Expertise */}
-      <section className="py-24" style={{ backgroundColor: theme.surface }}>
+
+      {/* <section className="py-24" style={{ backgroundColor: theme.surface }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -164,9 +173,34 @@ export default function About() {
           </div>
         </div>
       </section>
+      */}
+
+      {/* Measurements Section */}
+      <section className="py-24" style={{ backgroundColor: theme.surface }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2
+              className="font-serif text-4xl md:text-5xl font-bold mb-8"
+              style={{ color: theme.text }}
+            >
+              Measurements
+            </h2>
+            <div
+              className="space-y-2 text-lg font-sans"
+              style={{ color: theme.text }}
+            >
+              {measurements.map((item, idx) => (
+                <div className="font-medium" key={idx}>
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Fun Facts */}
-      <section className="py-24">
+      {/* <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -235,7 +269,7 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

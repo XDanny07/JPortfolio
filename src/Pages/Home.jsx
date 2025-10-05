@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import HeroSection from "@/Components/hero/HeroSection";
 import { useTheme } from "@/Components/theme/ThemeProvider";
-
+import { imgOb } from "../Entities/Images";
 export default function Home() {
   const { theme } = useTheme();
 
@@ -21,36 +21,33 @@ export default function Home() {
               className="font-serif text-4xl md:text-5xl font-bold mb-6"
               style={{ color: theme.text }}
             >
-              Featured Work
+              Portfolio Highlights
             </h2>
             <p
               className="font-sans text-xl max-w-3xl mx-auto leading-relaxed"
               style={{ color: theme.textLight }}
             >
-              A curated selection of my latest editorial campaigns, luxury brand
-              collaborations, and artistic endeavors.
+              A curated selection of my recent shoots and creative projects as I
+              build my professional modeling portfolio.
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                image:
-                  "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&q=80",
-                title: "Haute Couture Campaign",
-                brand: "Maison Valentino",
+                image: imgOb.B1,
+                // title: "Haute Couture Campaign",
+                // brand: "Maison Valentino",
               },
               {
-                image:
-                  "https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&q=80",
-                title: "Editorial Beauty",
-                brand: "Vogue Italia",
+                image: imgOb.B2,
+                // title: "Editorial Beauty",
+                // brand: "Vogue Italia",
               },
               {
-                image:
-                  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&q=80",
-                title: "Luxury Timepiece",
-                brand: "Cartier",
+                image: imgOb.B3,
+                // title: "Luxury Timepiece",
+                // brand: "Cartier",
               },
             ].map((item, index) => (
               <motion.div
@@ -61,13 +58,13 @@ export default function Home() {
                 className="group cursor-pointer"
               >
                 <div
-                  className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-xl"
+                  className="relative  overflow-hidden rounded-2xl shadow-xl"
                   style={{ backgroundColor: theme.surface }}
                 >
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <div className="absolute bottom-6 left-6 right-6 text-white">

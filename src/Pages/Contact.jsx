@@ -12,25 +12,25 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      detail: "aria@ariachen.com",
-      link: "mailto:aria@ariachen.com",
+      detail: "joshnasethi6@gmail.com",
+      link: "mailto:joshnasethi6@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      detail: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      detail: "+91 81121 32455",
+      link: "tel:+918112132455",
     },
     {
       icon: Instagram,
       title: "Instagram",
-      detail: "@ariachen_model",
-      link: "https://instagram.com/ariachen_model",
+      detail: "@joshnaasethi",
+      link: "https://www.instagram.com/joshnaasethi?igsh=Z2FlazlrZ2RyczFz",
     },
     {
       icon: MapPin,
       title: "Based In",
-      detail: "New York, NY",
+      detail: "Bangalore, India",
       link: null,
     },
   ];
@@ -61,9 +61,10 @@ export default function Contact() {
               className="font-sans text-xl max-w-3xl mx-auto leading-relaxed"
               style={{ color: theme.textLight }}
             >
-              Available for fashion campaigns, editorial shoots, runway shows,
-              and commercial projects worldwide. Let's discuss how we can bring
-              your creative vision to life.
+              Available for fashion campaigns, editorial shoots and commercial
+              projects.
+              <br /> Let's discuss how we can bring your creative vision to
+              life.
             </p>
           </motion.div>
         </div>
@@ -161,7 +162,7 @@ export default function Contact() {
               </div>
 
               {/* Availability */}
-              <div
+              {/* <div
                 className="rounded-2xl p-8 shadow-xl"
                 style={{ backgroundColor: theme.surface }}
               >
@@ -200,10 +201,10 @@ export default function Contact() {
                   <Download className="w-5 h-5 mr-2" />
                   Download Resume
                 </Button>
-              </div>
+              </div> */}
 
               {/* Rates Information */}
-              <div
+              {/* <div
                 className="rounded-2xl p-8 shadow-xl"
                 style={{ backgroundColor: theme.surface }}
               >
@@ -229,7 +230,7 @@ export default function Contact() {
                   All rates are negotiable based on project scope, duration, and
                   usage rights.
                 </p>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>

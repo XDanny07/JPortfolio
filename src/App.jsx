@@ -148,7 +148,7 @@ function AppLayout({ children, currentPageName }) {
               {/* Social Icons */}
               <div className="hidden md:flex space-x-3">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/joshnaasethi?igsh=Z2FlazlrZ2RyczFz"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: theme.text }}
@@ -156,29 +156,29 @@ function AppLayout({ children, currentPageName }) {
                     (e.currentTarget.style.color = theme.accent)
                   }
                   onMouseOut={(e) => (e.currentTarget.style.color = theme.text)}
-                  className="transition-colors duration-300"
+                  className="hover:bg-white hover:!text-[#000] rounded-md p-1 transition-colors duration-300"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
-                  href="mailto:aria@ariachen.com"
+                  href="mailto:joshnasethi6@gmail.com"
                   style={{ color: theme.text }}
                   onMouseOver={(e) =>
                     (e.currentTarget.style.color = theme.accent)
                   }
                   onMouseOut={(e) => (e.currentTarget.style.color = theme.text)}
-                  className="transition-colors duration-300"
+                  className="hover:bg-white hover:!text-[#000] rounded-md p-1 transition-colors duration-300"
                 >
                   <Mail className="w-5 h-5" />
                 </a>
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+918112132455"
                   style={{ color: theme.text }}
                   onMouseOver={(e) =>
                     (e.currentTarget.style.color = theme.accent)
                   }
                   onMouseOut={(e) => (e.currentTarget.style.color = theme.text)}
-                  className="transition-colors duration-300"
+                  className="hover:bg-white hover:!text-[#000] rounded-md p-1 transition-colors duration-300"
                 >
                   <Phone className="w-5 h-5" />
                 </a>
@@ -333,7 +333,7 @@ function AppLayout({ children, currentPageName }) {
                 Joshna Sethi
               </h3>
               <p className="font-sans mt-2" style={{ color: theme.textLight }}>
-                Professional Model & Creative
+                Model & Creative
               </p>
             </div>
 
@@ -348,7 +348,7 @@ function AppLayout({ children, currentPageName }) {
                 className="font-sans text-sm mt-1"
                 style={{ color: theme.textLight }}
               >
-                Available for bookings worldwide
+                Available for bookings.
               </p>
             </div>
           </div>

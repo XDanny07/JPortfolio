@@ -11,12 +11,12 @@ export default function PortfolioGrid({ portfolioItems }) {
   const { theme } = useTheme();
 
   const filters = [
-    { key: "all", label: "All Work" },
-    { key: "fashion", label: "Fashion" },
-    { key: "commercial", label: "Commercial" },
-    { key: "beauty", label: "Beauty" },
-    { key: "artistic", label: "Artistic" },
-    { key: "runway", label: "Runway" },
+    // { key: "all", label: "All Work" },
+    // { key: "fashion", label: "Fashion" },
+    // { key: "commercial", label: "Commercial" },
+    // { key: "beauty", label: "Beauty" },
+    // { key: "artistic", label: "Artistic" },
+    // { key: "runway", label: "Runway" },
   ];
 
   const filteredItems =
@@ -66,7 +66,7 @@ export default function PortfolioGrid({ portfolioItems }) {
               className="group cursor-pointer"
               onClick={() => setSelectedImage(item)}
             >
-              <div className="relative aspect-[4/5] overflow-hidden rounded-2xl theme-surface shadow-lg">
+              <div className="relative overflow-hidden rounded-2xl theme-surface shadow-lg">
                 <img
                   src={item.image_url}
                   alt={item.title}
@@ -74,7 +74,7 @@ export default function PortfolioGrid({ portfolioItems }) {
                 />
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                     <h3 className="luxury-font text-xl font-bold mb-2">
                       {item.title}
@@ -99,7 +99,7 @@ export default function PortfolioGrid({ portfolioItems }) {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Hover Icon */}
                 <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
@@ -144,11 +144,11 @@ export default function PortfolioGrid({ portfolioItems }) {
                 className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm hover:bg-white"
                 onClick={() => setSelectedImage(null)}
               >
-                <X className="w-5 h-5" />
+                <X className="cursor-pointer w-5 h-5" />
               </Button>
 
               {/* Image Info */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent rounded-b-lg p-6 text-white">
+              {/* <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent rounded-b-lg p-6 text-white">
                 <h3 className="luxury-font text-2xl font-bold mb-2">
                   {selectedImage.title}
                 </h3>
@@ -175,7 +175,7 @@ export default function PortfolioGrid({ portfolioItems }) {
                     {selectedImage.category}
                   </Badge>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </motion.div>
         )}

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Portfolio from "@/Entities/Portfolio.json";
 import PortfolioGrid from "@/Components/portfolio/PortfolioGrid";
 import { useTheme } from "@/Components/theme/ThemeProvider";
-
+import { portfolioitemsdata } from "../Entities/Images";
 export default function PortfolioPage() {
   const [portfolioItems, setPortfolioItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -14,12 +14,7 @@ export default function PortfolioPage() {
   }, []);
 
   const loadPortfolio = async () => {
-    try {
-      const items = await Portfolio.list("-created_date");
-      setPortfolioItems(items);
-    } catch (error) {
-      console.error("Error loading portfolio:", error);
-    }
+    await new Promise((resolve) => setTimeout(resolve, 3000));
     setIsLoading(false);
   };
 
@@ -63,9 +58,8 @@ export default function PortfolioPage() {
               className="font-sans text-xl max-w-3xl mx-auto leading-relaxed"
               style={{ color: theme.textLight }}
             >
-              A comprehensive collection of editorial campaigns, runway shows,
-              commercial work, and artistic collaborations spanning eight years
-              of professional modeling.
+              A showcase of my recent shoots and creative projects, capturing
+              the early steps of my modeling journey.
             </p>
           </motion.div>
         </div>
@@ -74,7 +68,7 @@ export default function PortfolioPage() {
       {/* Portfolio Grid */}
       <section className="pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <PortfolioGrid portfolioItems={portfolioItems} />
+          <PortfolioGrid portfolioItems={portfolioitemsdata} />
         </div>
       </section>
     </div>
