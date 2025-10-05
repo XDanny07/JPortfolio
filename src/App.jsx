@@ -10,7 +10,7 @@ import {
   DropdownMenuTrigger,
   DropdownMenuLabel,
   DropdownMenuSeparator,
-} from "@/components/ui/dropdown-menu";
+} from "@/Components/ui/dropdown-menu";
 import { ThemeProvider, useTheme } from "@/components/theme/ThemeProvider";
 import { AnimatePresence, motion } from "framer-motion";
 import { getNavigationRoutes } from "@/components/config/routes";
