@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Portfolio from "@/entities/Portfolio.json";
-import PortfolioGrid from "../components/portfolio/PortfolioGrid";
+import PortfolioGrid from "@/components/portfolio/PortfolioGrid";
 import { useTheme } from "@/components/theme/ThemeProvider";
 
 export default function PortfolioPage() {
