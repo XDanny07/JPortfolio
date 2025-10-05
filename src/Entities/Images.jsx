@@ -1,20 +1,20 @@
 import homeBg from "@/assets/cropped1.jpg";
 import aboutpic from "@/assets/about.jpg";
-import B1 from "@/assets/XR6_5013.jpg";
+import B1 from "@/assets/XR6_5013.JPG";
 import B2 from "@/assets/IMG-20251004-WA0019.jpg";
-import B3 from "@/assets/XR6_5978.jpg";
-import P1 from "@/assets/1.jpg";
-import P2 from "@/assets/2.jpg";
+import B3 from "@/assets/XR6_5978.JPG";
+import P1 from "@/assets/1.JPG";
+import P2 from "@/assets/2.JPG";
 import P3 from "@/assets/3.jpg";
-import P4 from "@/assets/4.jpg";
+import P4 from "@/assets/4.JPG";
 import P5 from "@/assets/5.jpg";
 import P6 from "@/assets/6.jpg";
 import P7 from "@/assets/7.jpg";
 import P8 from "@/assets/8.jpg";
-import P9 from "@/assets/9.jpg";
+import P9 from "@/assets/9.JPG";
 import P10 from "@/assets/10.jpg";
 import P11 from "@/assets/11.jpg";
-import P12 from "@/assets/12.jpg";
+import P12 from "@/assets/12.JPG";
 import P13 from "@/assets/13.jpg";
 export const imgOb = {
   homeBg,
