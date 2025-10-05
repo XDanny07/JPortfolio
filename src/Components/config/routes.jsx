@@ -14,11 +14,11 @@ export const routes = [
     name: "About",
     showInNav: true,
   },
-  {
-    path: "Videos",
-    name: "Videos",
-    showInNav: true,
-  },
+  // {
+  //   path: "Videos",
+  //   name: "Videos",
+  //   showInNav: true,
+  // },
   {
     path: "Contact",
     name: "Contact",

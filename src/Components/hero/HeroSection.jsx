@@ -1,10 +1,10 @@
-import React from "react";
+import VPbutton from "../ui/VPButton";
 import { motion } from "framer-motion";
 import { Button } from "@/Components/ui/button";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { ArrowRight, Play } from "lucide-react";
-import { useTheme } from "@/Components/theme/ThemeProvider"; // Changed import path for useTheme
+import { useTheme } from "@/Components/theme/ThemeProvider";
 import { imgOb } from "@/Entities/Images";
 export default function HeroSection() {
   const { theme } = useTheme();
@@ -36,9 +36,9 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
             >
-              Redefining
+              Hi,
               <br />
-              <span style={{ color: theme.accent }}>Elegance</span>
+              <span style={{ color: theme.accent }}>I'm Joshna</span>
             </motion.h1>
 
             <motion.p
@@ -47,8 +47,9 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
             >
-              International fashion model specializing in haute couture,
-              editorial campaigns, and luxury brand collaborations.
+              An aspiring Commercial, Beauty, and Fashion Model who loves being
+              part of projects that tell a story and would love to explore more
+              opportunities as I grow in this journey.
             </motion.p>
 
             <motion.div
@@ -58,30 +59,33 @@ export default function HeroSection() {
               transition={{ duration: 1, delay: 0.9 }}
             >
               <Link to={createPageUrl("Portfolio")}>
-                <Button
+                {/* <Button
                   size="lg"
-                  className="group px-8 py-3 text-lg font-medium transition-all duration-300 hover:scale-105"
+                  className="group px-8 py-3 text-lg font-medium transition-all duration-300 hover:scale-105 cursor-pointer"
                   style={{ backgroundColor: theme.accent, color: "white" }}
                 >
                   View Portfolio
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                </Button>
+                </Button> */}
+                <VPbutton />
               </Link>
 
-              <Link to={createPageUrl("Videos")}>
+              {/* Watch reel btn */}
+              {/* <Link to={createPageUrl("Videos")}>
                 <Button
                   variant="outline"
                   size="lg"
-                  className="group px-8 py-3 text-lg font-medium border-white text-white hover:bg-white hover:text-black transition-all duration-300 hover:scale-105"
+                  className="group px-8 py-3 text-lg font-medium border-white text-white hover:bg-white hover:text-black transition-all duration-300 hover:scale-105 cursor-pointer"
                 >
                   <Play className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                   Watch Reel
                 </Button>
-              </Link>
+              </Link> */}
             </motion.div>
           </motion.div>
 
-          <motion.div
+          {/* Experience section */}
+          {/* <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
@@ -120,7 +124,7 @@ export default function HeroSection() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
 

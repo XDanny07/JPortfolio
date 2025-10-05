@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Award, MapPin, Users, Heart } from "lucide-react";
 import { useTheme } from "@/Components/theme/ThemeProvider";
+import { imgOb } from "../Entities/Images";
 
 export default function About() {
   const { theme } = useTheme();
@@ -21,30 +22,31 @@ export default function About() {
                 className="font-serif text-5xl md:text-6xl font-bold mb-8"
                 style={{ color: theme.text }}
               >
-                About Aria
+                About Me
               </h1>
               <div
                 className="space-y-6 font-sans text-lg leading-relaxed"
                 style={{ color: theme.text }}
               >
                 <p>
-                  Born in Shanghai and raised between New York and Paris, I
-                  discovered my passion for modeling at the age of sixteen when
-                  I was scouted during Fashion Week. What started as a curiosity
-                  evolved into a dedicated career spanning luxury fashion,
-                  commercial campaigns, and artistic collaborations.
+                  I was born in Odisha and grew up across different regions of
+                  India, which gave me a deep appreciation for culture, beauty,
+                  and individuality. My journey into modeling began during my
+                  first year of college, when I attended a beauty show filled
+                  with glamour, lights, and confidence .That moment became the
+                  turning point — transforming admiration into aspiration.
                 </p>
                 <p>
-                  My multicultural background brings a unique perspective to
-                  every shoot, allowing me to seamlessly adapt between different
-                  aesthetics and brand languages. I believe modeling is not just
-                  about wearing clothes—it's about storytelling, emotion, and
-                  creating moments that resonate.
+                  Ever since childhood, I’ve always been drawn to cameras, big
+                  screens, and creative expression. Whether performing on stage
+                  or participating in creative activities, nurtured my interest
+                  in art and fashion, helping me realize that modeling, for me,
+                  is more than appearance; it’s a form of storytelling, emotion,
+                  and empowerment.
                 </p>
                 <p>
-                  When I'm not on set, you'll find me practicing yoga, exploring
-                  contemporary art galleries, or working on my photography
-                  project documenting street fashion across different cultures.
+                  Fluent in Hindi, English, and Odia, I embrace diversity and
+                  carry it with grace both on and off camera.
                 </p>
               </div>
             </motion.div>
@@ -60,7 +62,7 @@ export default function About() {
                 style={{ backgroundColor: theme.surface }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1494790108755-2616c96c8363?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  src={imgOb.aboutpic}
                   alt="Joshna Sethi Portrait"
                   className="w-full h-full object-cover"
                 />

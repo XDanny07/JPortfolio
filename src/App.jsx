@@ -3,6 +3,7 @@ import { Link, useLocation, Outlet } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Instagram, Mail, Phone, Palette, Menu, X } from "lucide-react";
 import { Button } from "@/Components/ui/button";
+import LogoBtn from "@/Components/ui/logoBtn";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -14,6 +15,7 @@ import {
 import { ThemeProvider, useTheme } from "@/Components/theme/ThemeProvider";
 import { AnimatePresence, motion } from "framer-motion";
 import { getNavigationRoutes } from "@/Components/config/routes";
+import "./App.css";
 
 function AppLayout({ children, currentPageName }) {
   const location = useLocation();
@@ -41,26 +43,25 @@ function AppLayout({ children, currentPageName }) {
       {/* Navigation */}
       <nav
         className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-opacity-90 border-b border-opacity-20"
-        style={{ backgroundColor: theme.surface, borderColor: theme.textLight }}
+        style={{ backgroundColor: theme.accent, borderColor: theme.textLight }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <Link
               to={createPageUrl("Home")}
-              className="font-serif text-2xl font-bold transition-colors duration-300"
+              className="hover:!text-[#fff] font-serif text-2xl font-bold transition-colors duration-300"
               style={{ color: theme.text }}
-              onMouseOver={(e) => (e.currentTarget.style.color = theme.accent)}
-              onMouseOut={(e) => (e.currentTarget.style.color = theme.text)}
+              // onMouseOver={(e) => (e.currentTarget.style.color = theme.accent)}
+              // onMouseOut={(e) => (e.currentTarget.style.color = theme.text)}
             >
               Joshna Sethi
             </Link>
-
-            <div className="hidden md:flex items-center space-x-8">
+            <div className=" hidden md:flex items-center space-x-6">
               {navigationItems.map((item) => (
                 <Link
                   key={item.path}
                   to={createPageUrl(item.path)}
-                  className="font-sans font-medium transition-all duration-300"
+                  className="hover:bg-white hover:!text-[#000] px-2 py-1 rounded-md font-sans font-medium transition-all duration-300"
                   style={{
                     color:
                       currentPageName === item.path ? theme.accent : theme.text,
@@ -80,7 +81,7 @@ function AppLayout({ children, currentPageName }) {
 
             <div className="flex items-center space-x-2 md:space-x-4">
               {/* Enhanced Theme Switcher */}
-              <DropdownMenu>
+              {/* <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button
                     variant="ghost"
@@ -142,7 +143,7 @@ function AppLayout({ children, currentPageName }) {
                     )
                   )}
                 </DropdownMenuContent>
-              </DropdownMenu>
+              </DropdownMenu> */}
 
               {/* Social Icons */}
               <div className="hidden md:flex space-x-3">

@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import HeroSection from "@/Components/hero/HeroSection";
 import { useTheme } from "@/Components/theme/ThemeProvider";
@@ -88,7 +87,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-24" style={{ backgroundColor: theme.surface }}>
+      {/* <section className="py-24" style={{ backgroundColor: theme.surface }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
@@ -125,7 +124,7 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

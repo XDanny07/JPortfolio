@@ -168,7 +168,7 @@ const ThemeContext = createContext();
 export const useTheme = () => useContext(ThemeContext);
 
 export function ThemeProvider({ children }) {
-  const [currentTheme, setCurrentTheme] = useState("luxury");
+  const [currentTheme, setCurrentTheme] = useState("platinum");
   const theme = themes[currentTheme];
 
   const value = {
