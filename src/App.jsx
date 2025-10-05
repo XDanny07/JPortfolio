@@ -22,10 +22,22 @@ function AppLayout({ children, currentPageName }) {
   const { theme, currentTheme, setCurrentTheme, themes } = useTheme();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  React.useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
+
   const navigationItems = getNavigationRoutes();
 
   const handleMobileLinkClick = () => {
     setIsMobileMenuOpen(false);
+    document.body.style.overflow = "";
   };
 
   const themeCategories = {
