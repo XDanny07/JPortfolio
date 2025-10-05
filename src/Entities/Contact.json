@@ -1,0 +1,45 @@
+{
+  "name": "Contact",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Contact person's name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Contact email address"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Contact phone number"
+    },
+    "project_type": {
+      "type": "string",
+      "enum": [
+        "fashion_shoot",
+        "commercial",
+        "runway",
+        "editorial",
+        "campaign",
+        "other"
+      ],
+      "description": "Type of modeling project"
+    },
+    "message": {
+      "type": "string",
+      "description": "Message from potential client"
+    },
+    "budget": {
+      "type": "string",
+      "description": "Project budget range"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["new", "replied", "booked", "declined"],
+      "default": "new",
+      "description": "Status of the inquiry"
+    }
+  },
+  "required": ["name", "email", "project_type", "message"]
+}

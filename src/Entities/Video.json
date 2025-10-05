@@ -1,0 +1,32 @@
+{
+  "name": "Video",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Title of the video"
+    },
+    "video_url": {
+      "type": "string",
+      "description": "URL of the video file"
+    },
+    "thumbnail_url": {
+      "type": "string",
+      "description": "Thumbnail image URL"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["runway", "editorial", "commercial", "behind_scenes"],
+      "description": "Category of video content"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the video"
+    },
+    "duration": {
+      "type": "string",
+      "description": "Duration of the video"
+    }
+  },
+  "required": ["title", "video_url", "category"]
+}

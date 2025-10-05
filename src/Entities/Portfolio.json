@@ -1,0 +1,37 @@
+{
+  "name": "Portfolio",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Title of the portfolio piece"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["fashion", "commercial", "beauty", "artistic", "runway"],
+      "description": "Category of modeling work"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "URL of the portfolio image"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the shoot or project"
+    },
+    "photographer": {
+      "type": "string",
+      "description": "Name of the photographer"
+    },
+    "brand": {
+      "type": "string",
+      "description": "Brand or client name"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether to feature this image prominently"
+    }
+  },
+  "required": ["title", "category", "image_url"]
+}
