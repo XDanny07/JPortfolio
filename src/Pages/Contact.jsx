@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ContactForm from "@/components/contact/ContactForm";
-import { Button } from "@/components/ui/button";
+import ContactForm from "@/Components/contact/ContactForm";
+import { Button } from "@/Components/ui/button";
 import { Instagram, Mail, Phone, Download, MapPin, Clock } from "lucide-react";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import { useTheme } from "@/Components/theme/ThemeProvider";
 
 export default function Contact() {
   const { theme } = useTheme();

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Award, MapPin, Users, Heart } from "lucide-react";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import { useTheme } from "@/Components/theme/ThemeProvider";
 
 export default function About() {
   const { theme } = useTheme();

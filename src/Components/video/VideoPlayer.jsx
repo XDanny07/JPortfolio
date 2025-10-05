@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Play, Pause, Volume2, VolumeX, Maximize } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import { Button } from "@/Components/ui/button";
+import { Badge } from "@/Components/ui/badge";
+import { useTheme } from "@/Components/theme/ThemeProvider";
 
 export default function VideoPlayer({ video, autoplay = false }) {
   const [isPlaying, setIsPlaying] = useState(autoplay);

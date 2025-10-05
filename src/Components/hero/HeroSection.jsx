@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/ui/button";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { ArrowRight, Play } from "lucide-react";
-import { useTheme } from "@/components/theme/ThemeProvider"; // Changed import path for useTheme
+import { useTheme } from "@/Components/theme/ThemeProvider"; // Changed import path for useTheme
 import { imgOb } from "@/Entities/Images";
 export default function HeroSection() {
   const { theme } = useTheme();

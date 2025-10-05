@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation, Outlet } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Instagram, Mail, Phone, Palette, Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,9 +11,9 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
 } from "@/Components/ui/dropdown-menu";
-import { ThemeProvider, useTheme } from "@/components/theme/ThemeProvider";
+import { ThemeProvider, useTheme } from "@/Components/theme/ThemeProvider";
 import { AnimatePresence, motion } from "framer-motion";
-import { getNavigationRoutes } from "@/components/config/routes";
+import { getNavigationRoutes } from "@/Components/config/routes";
 
 function AppLayout({ children, currentPageName }) {
   const location = useLocation();

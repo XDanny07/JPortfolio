@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Portfolio from "@/entities/Portfolio.json";
-import PortfolioGrid from "@/components/portfolio/PortfolioGrid";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import PortfolioGrid from "@/Components/portfolio/PortfolioGrid";
+import { useTheme } from "@/Components/theme/ThemeProvider";
 
 export default function PortfolioPage() {
   const [portfolioItems, setPortfolioItems] = useState([]);

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Video from "@/entities/Video";
-import VideoPlayer from "@/components/video/VideoPlayer";
-import { Button } from "@/components/ui/button";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import VideoPlayer from "@/Components/video/VideoPlayer";
+import { Button } from "@/Components/ui/button";
+import { useTheme } from "@/Components/theme/ThemeProvider";
 
 export default function Videos() {
   const [videos, setVideos] = useState([]);

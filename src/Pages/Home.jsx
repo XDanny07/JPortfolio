@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import HeroSection from "@/components/hero/HeroSection";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import HeroSection from "@/Components/hero/HeroSection";
+import { useTheme } from "@/Components/theme/ThemeProvider";
 
 export default function Home() {
   const { theme } = useTheme();
