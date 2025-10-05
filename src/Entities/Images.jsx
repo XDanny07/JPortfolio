@@ -13,7 +13,7 @@ import P7 from "@/assets/7.jpg";
 import P8 from "@/assets/8.jpg";
 import P9 from "@/assets/9.JPG";
 import P10 from "@/assets/10.jpg";
-import P11 from "@/assets/11.jpg";
+import P11 from "@/assets/11.JPG";
 import P12 from "@/assets/12.JPG";
 import P13 from "@/assets/13.jpg";
 export const imgOb = {
