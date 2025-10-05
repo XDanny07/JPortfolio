@@ -14,7 +14,7 @@ export default function PortfolioPage() {
   }, []);
 
   const loadPortfolio = async () => {
-    await new Promise((resolve) => setTimeout(resolve, 3000));
+    await new Promise((resolve) => setTimeout(resolve, 1500));
     setIsLoading(false);
   };
 

@@ -49,57 +49,25 @@ export default function PortfolioGrid({ portfolioItems }) {
         ))}
       </div>
 
-      {/* Portfolio Grid */}
-      <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-        layout
-      >
+      {/* Portfolio Masonry Grid */}
+      <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
         <AnimatePresence>
           {filteredItems.map((item, index) => (
             <motion.div
               key={item.id}
-              layout
-              initial={{ opacity: 0, scale: 0.8 }}
+              initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
+              exit={{ opacity: 0, scale: 0.98 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group cursor-pointer"
+              className="group cursor-pointer break-inside-avoid mb-8"
               onClick={() => setSelectedImage(item)}
             >
               <div className="relative overflow-hidden rounded-2xl theme-surface shadow-lg">
                 <img
                   src={item.image_url}
                   alt={item.title}
-                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                  className="w-full h-auto object-cover transition-all duration-700 group-hover:scale-110"
                 />
-
-                {/* Overlay */}
-                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="luxury-font text-xl font-bold mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="clean-font text-sm text-gray-200 mb-3">
-                      {item.description}
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <Badge
-                        variant="secondary"
-                        className="capitalize"
-                        style={{
-                          backgroundColor: theme.accent,
-                          color: "white",
-                        }}
-                      >
-                        {item.category}
-                      </Badge>
-                      <div className="flex items-center text-sm">
-                        <Camera className="w-4 h-4 mr-1" />
-                        {item.photographer}
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
 
                 {/* Hover Icon */}
                 <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
@@ -112,7 +80,7 @@ export default function PortfolioGrid({ portfolioItems }) {
             </motion.div>
           ))}
         </AnimatePresence>
-      </motion.div>
+      </div>
 
       {/* Lightbox Modal */}
       <AnimatePresence>
@@ -128,7 +96,7 @@ export default function PortfolioGrid({ portfolioItems }) {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
-              className="relative max-w-4xl max-h-[90vh] w-full"
+              className="overflow-hidden relative max-w-4xl max-h-[90vh] w-full"
               onClick={(e) => e.stopPropagation()}
             >
               <img
